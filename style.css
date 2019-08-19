@@ -1,0 +1,285 @@
+@font-face {
+  font-family: 'Gotham';
+  src: url('./font/gotham.otf')
+}
+
+@font-face {
+  font-family: 'Gotham-Bold';
+  src: url('./font/gotham-bold.otf')
+}
+
+/* Стили для заднего фона */
+.background {
+  width: 100%; 
+  height: 100%; 
+  background-size: cover;
+  position: fixed; 
+  left: 0px; 
+  top: 0px; 
+  z-index: -1; 
+  background-image: url(./img/background.jpg);
+}
+
+/* Базовые стили брэнда */
+.brand {
+  position: fixed; 
+  width: 14%;
+  top: 20%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* Базовые стили формы */
+form{
+  margin: 4% auto;
+  width: 30%;
+  box-sizing:border-box;
+  padding: 1.5% 2% 3% 2%;
+  border-radius: 8px; 
+  background-color: #ffffff;
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.15);
+  text-align: center;
+  position: fixed; 
+  top: 50%; 
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+  
+/* Базовые стили заголовка формы */
+h2 { 
+  opacity: 0.8;
+  font-family: 'Gotham-Bold', sans-serif;
+  font-weight: bold;
+  font-size: 1.2vw;
+  margin-bottom: 4%; 
+}
+
+/* Базовые стили полей ввода */
+.textbox{
+  width: 100%;
+  border-radius: 4px;
+  box-sizing:border-box;
+  font-family: 'Gotham', sans-serif;
+  font-size: 12px; 
+  font-weight: bold;
+  padding: 3%;
+  margin-bottom: 5%;  
+  background-color: #f1f1f1;
+  border: none; 
+  outline: none;
+}
+
+input::placeholder { opacity: 0.4;}
+
+/* Базовые стили ошибки */
+.eror{
+  width: 100%;
+  border-radius: 4px;
+  box-sizing:border-box;
+  font-family: 'Gotham', sans-serif;
+  font-size: 12px; 
+  font-weight: 500;
+  padding: 3%;
+  margin-bottom: 5%;  
+  background-color: rgba(237, 65, 89, 0.25);
+  border: none; 
+  outline: none;
+  display: none;
+  color: #ed4159;
+}
+
+/* Базовые стили кнопки */
+.button{
+  width: 30%;
+  margin-top: 4%;
+  border-radius: 100px;
+  background:#ed4159;
+  cursor:pointer;
+  box-shadow: 0 4px 16px 0 rgba(237, 65, 89, 0.4);
+  border: none;
+  outline: none;
+  padding: 3.5%;
+  font-family: 'Gotham', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+/* Изменение фона кнопки при наведении */
+.button:hover{
+  background:#ffffff;
+  color: #ed4159;
+}
+
+/* Стили для аватарки */
+.img {
+  border-radius: 100px;
+  width: 30%;
+  margin-top: 10px;
+  display: none;
+}
+
+/* Стили для имени пользователя */
+h3 {
+  opacity: 0.8;
+  font-family: 'Gotham-Bold', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 60px;
+  color: #262626;
+  display: none;
+}
+
+@media screen and (max-width: 1025px) {
+  .background {
+    background-image: linear-gradient(151deg, #ff435d, #b0208e);
+  }
+
+  .brand {
+    width: 40%;
+    top: 6%;
+  }
+
+  h2 { 
+    font-size: 35px;
+  }
+
+  form{
+    width: 80%;
+    padding: 7% 2% 14% 2%;
+    margin: 2% auto;
+  }
+
+  .textbox{
+    width: 90%;
+    font-size: 25px;
+    margin-bottom: 7%;  
+  }
+
+  .button{
+    width: 50%;
+    font-size: 28px;
+    padding: 5%;
+  }
+
+  .button:hover{
+    background:#ed4159;
+    color: #ffffff;
+  }
+
+  .button:active{
+    background:#ffffff;
+    color: #ed4159;
+  }
+
+  .eror{
+    width: 90%;
+    font-size: 25px;
+    margin-bottom: 7%;   
+  }
+
+  .img {
+    border-radius: 120px;
+    width: 30%;
+  }
+
+  h3 {
+    font-size: 40px;
+    line-height: 90px;
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .background {
+    background-image: linear-gradient(151deg, #ff435d, #b0208e);
+  }
+
+  .brand {
+    top: 10%;
+  }
+
+  h2 { 
+    font-size: 22px;
+  }
+
+  form{
+    width: 90%;
+    padding: 7% 2% 14% 2%;
+    margin: 2% auto;
+  }
+
+  .textbox{
+    width: 90%;
+    font-size: 17px;
+    margin-bottom: 7%;  
+  }
+
+  .button{
+    width: 50%;
+    font-size: 15px;
+    padding: 5%;
+  }
+
+  .button:hover{
+    background:#ed4159;
+    color: #ffffff;
+  }
+
+  .button:active{
+    background:#ffffff;
+    color: #ed4159;
+  }
+
+  .eror{
+    width: 90%;
+    font-size: 17px;
+    margin-bottom: 7%;   
+  }
+
+  .img {
+    border-radius: 100px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 700px) and (orientation: landscape) {
+  form{
+    width: 50%;
+    padding: 1% 2% 1% 2%;
+    margin: 1% auto;
+  }
+
+  .textbox{
+    font-size: 14px;
+    margin-bottom: 4%;  
+  }
+
+  button {
+    margin-top: 1%;
+    width: 20%;
+    padding: 2%;
+  }
+
+  h2 { 
+    margin-bottom: 1%; 
+  }
+
+  .img {
+    margin-top: 4px;
+  }
+  
+  h3 {
+    line-height: 20px;
+  }
+}
+  
+
+ 

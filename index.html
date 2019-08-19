@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<link href='style.css' rel='stylesheet' type='text/css'>
+<script src="script.js"></script>
+<link rel="icon" type="image/png" href="./img/title.png">
+<title>Mercury</title>
+</head>
+<body>
+    <div class="background">
+        <img src="./img/mercury.png" class="brand"/>
+        <form>
+            <h2 id="header">Log In</h2>
+            <div><img src="" id="img" class="img"/></div>
+            <div><h3 id="name"></h3></div>
+            <input name="emailaddress" placeholder="E-Mail" id="email" class="textbox" type="email" />
+            <input name="password" placeholder="Password" id="password" class="textbox" type="password" />
+            <input name="eror" id="eror" class="eror" value="E-Mail or password is incorrect" />
+            <input  class="button" type="button" onclick="postRequest()" value="Login" />
+        </form>
+    </div>
+</body>
+</html>
